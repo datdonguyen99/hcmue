@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 // import 'package:rounded_loading_button/rounded_loading_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hcmue/public/widgets/circuled_button.dart';
@@ -43,6 +44,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       showSnackBar('Test login', context);
+      Get.offAllNamed('/sthome');
 
       setState(() {
         _isLoading = false;
