@@ -44,7 +44,8 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       showSnackBar('Test login', context);
-      Get.offAllNamed('/sthome');
+      // Get.offAllNamed('/sthome');
+      Get.offAllNamed('/prthome');
 
       setState(() {
         _isLoading = false;

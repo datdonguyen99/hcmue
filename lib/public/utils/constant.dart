@@ -8,7 +8,7 @@ const gray = Color(0xFFA4A4A4);
 const lightGray = Color(0xFFD4D4D4);
 const backgroundColor = Color(0xFFF6F6F6);
 const white = Color(0xFFFFFFFF);
-const loadingPrimarycolor = Color.fromARGB(255, 192, 195, 236);
+const loadingPrimarycolor = Color.fromARGB(255, 211, 211, 211);
 
 const gradientColor = LinearGradient(
   begin: Alignment.centerLeft,
