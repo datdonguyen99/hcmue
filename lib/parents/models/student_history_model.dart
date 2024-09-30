@@ -1,19 +1,25 @@
 class StudentHistoryModel {
   StudentHistoryModel({
-    required this.subject,
-    required this.date,
-    required this.status,
+    required this.title,
+    required this.description,
+    required this.startDate,
+    required this.completionDate,
+    required this.completionLevel,
   });
 
-  String subject;
-  DateTime date;
-  String status;
+  String title;
+  String description;
+  DateTime startDate;
+  DateTime completionDate;
+  double completionLevel;
 
   factory StudentHistoryModel.fromJson(Map<String, dynamic> json) {
     return StudentHistoryModel(
-      subject: json['subject'],
-      date: DateTime.parse(json['date']),
-      status: json['status'],
+      title: json['title'],
+      description: json['description'],
+      startDate: DateTime.parse(json['start_date']),
+      completionDate: DateTime.parse(json['completion_date']),
+      completionLevel: double.parse(json['completion_level']),
     );
   }
 }

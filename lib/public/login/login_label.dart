@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../utils/constant.dart';
+import 'package:hcmue/public/utils/constant.dart';
 
 class LoginLabel extends StatelessWidget {
   const LoginLabel({super.key});
@@ -10,12 +10,12 @@ class LoginLabel extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Text(
-        "LOGIN HCMUE",
+        "Đăng nhập hệ thống E-learning",
         style: GoogleFonts.openSans(
           textStyle: const TextStyle(
-            color: titleColor,
+            color: darkTurquoise,
             fontWeight: FontWeight.w900,
-            fontSize: 34,
+            fontSize: 24,
           ),
         ),
       ),

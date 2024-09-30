@@ -70,8 +70,8 @@ class HomeScreen extends StatelessWidget {
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
                             colors: [
-                              Colors.amber,
-                              Colors.blue,
+                              darkTurquoise,
+                              primaryColor,
                             ],
                           ),
                           press: () {
@@ -146,6 +146,14 @@ class HomeScreen extends StatelessWidget {
                       children: [
                         menuItem(
                           icon: Icons.account_balance,
+                          color: const LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              orange,
+                              secondaryColor,
+                            ],
+                          ),
                           press: () => {},
                         ),
                         const SizedBox(height: 8.0),

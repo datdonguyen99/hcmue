@@ -6,14 +6,14 @@ class StudentProfileService {
       final Map<String, dynamic> mockResponse = {
         'statusCode': 200,
         'data': {
-          'firstName': 'DAT',
-          'lastName': 'DO',
+          'firstName': 'Tech',
+          'lastName': 'Dev',
           'grade': '8',
           'class_': '8A11',
-          'email': 'datdonguyen99@hcmue.edu.vn',
-          'phoneNumber': '0396240327',
+          'email': 'info@techdev.vn',
+          'phoneNumber': '0702 08 68 38',
           'address':
-              '72/24 Phan Đăng Lưu, p.6, q.Bình Thạnh, Hồ Chí Minh city.',
+              'Số 10, Đường số 24, Bình Hưng, Bình Chánh, Hồ Chí Minh city.',
         },
       };
 

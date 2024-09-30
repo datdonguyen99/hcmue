@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../utils/constant.dart';
+import 'package:hcmue/public/utils/constant.dart';
 
 Widget customFormField({
   required TextEditingController controller,
@@ -13,17 +13,14 @@ Widget customFormField({
   required IconData prefix,
   IconData? suffix,
   Function? suffixPressed,
+  String? errorText,
 }) {
   return TextFormField(
     controller: controller,
     keyboardType: type,
     obscureText: isPassword,
-    onFieldSubmitted: (s) {
-      onSubmit!(s);
-    },
-    onChanged: (s) {
-      onChange!(s);
-    },
+    onFieldSubmitted: (s) => onSubmit!(s),
+    onChanged: (s) => onChange!(s),
     validator: validate,
     decoration: InputDecoration(
       filled: true,
@@ -36,15 +33,14 @@ Widget customFormField({
       ),
       suffixIcon: suffix != null
           ? IconButton(
-              onPressed: () {
-                suffixPressed!();
-              },
+              onPressed: () => suffixPressed!(),
               icon: Icon(
                 suffix,
                 color: lightGray,
               ),
             )
           : null,
+      errorText: errorText,
       border: const OutlineInputBorder(),
       enabledBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(10.0),
@@ -52,10 +48,10 @@ Widget customFormField({
       ),
       focusedBorder: OutlineInputBorder(
         borderRadius: BorderRadius.circular(12.0),
-        borderSide: const BorderSide(color: secondaryColor),
+        borderSide: const BorderSide(color: darkTurquoise),
       ),
       floatingLabelStyle: const TextStyle(
-        color: secondaryColor,
+        color: darkTurquoise,
       ),
       labelStyle: const TextStyle(color: lightGray),
     ),

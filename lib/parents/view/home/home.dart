@@ -50,28 +50,54 @@ class ParentsHome extends StatelessWidget {
           init: HomeController(),
           builder: (c) => c.bottomNavigationBarPages[c.currentIdx.value],
         ),
-        bottomNavigationBar: Obx(
-          () => CustomNavigationBar(
-            iconSize: 25.0,
-            selectedColor: primaryColor,
-            strokeColor: secondaryColor,
-            unSelectedColor: Colors.grey[600],
-            backgroundColor: Colors.white,
-            borderRadius: const Radius.circular(14),
-            elevation: 8,
-            items: [
-              CustomNavigationBarItem(
-                icon: const Icon(Icons.home_outlined),
-                title: Text(
-                  "Home",
-                  style: c.currentIdx.value == 0
-                      ? openSansRegularStyle(fontSize: 10, color: primaryColor)
-                      : openSansRegularStyle(fontSize: 10, color: gray),
+        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          tooltip: 'No fuction',
+          backgroundColor: secondaryColor,
+          foregroundColor: white,
+          shape: const CircleBorder(),
+          child: const Icon(Icons.add),
+        ),
+        bottomNavigationBar: BottomAppBar(
+          clipBehavior: Clip.antiAlias,
+          shape: const CircularNotchedRectangle(),
+          notchMargin: 6,
+          color: primaryColor,
+          elevation: 8,
+          child: Obx(
+            () => CustomNavigationBar(
+              iconSize: 35.0,
+              selectedColor: white,
+              strokeColor: orange,
+              unSelectedColor: lightGray,
+              backgroundColor: Theme.of(context).primaryColor.withAlpha(0),
+              // borderRadius: const Radius.circular(14),
+              elevation: 0,
+              scaleFactor: 0.4,
+              items: [
+                CustomNavigationBarItem(
+                  icon: const Icon(Icons.home),
+                  title: Text(
+                    "Home",
+                    style: c.currentIdx.value == 0
+                        ? openSansRegularStyle(fontSize: 10, color: white)
+                        : openSansRegularStyle(fontSize: 10, color: lightGray),
+                  ),
                 ),
-              ),
-            ],
-            currentIndex: c.currentIdx.value,
-            onTap: (idx) => c.changePages(idx),
+                CustomNavigationBarItem(
+                  icon: const Icon(Icons.settings),
+                  title: Text(
+                    "Setting",
+                    style: c.currentIdx.value == 1
+                        ? openSansRegularStyle(fontSize: 10, color: white)
+                        : openSansRegularStyle(fontSize: 10, color: lightGray),
+                  ),
+                ),
+              ],
+              currentIndex: c.currentIdx.value,
+              onTap: (idx) => c.changePages(idx),
+            ),
           ),
         ),
       ),

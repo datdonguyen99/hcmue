@@ -13,9 +13,6 @@ class StudentResultController extends GetxController {
     isLoading.value = true;
     try {
       semesters.value = await services.fetchSemester();
-      if (semesters.isNotEmpty) {
-        await getStudentResultBySemester(semesters[0].id);
-      }
     } finally {
       isLoading.value = false;
     }
