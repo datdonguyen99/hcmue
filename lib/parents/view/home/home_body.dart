@@ -19,8 +19,8 @@ class HomeScreen extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 24.0),
             child: Card(
-              elevation: 2,
-              color: white,
+              elevation: 10,
+              color: backgroundColor,
               margin: const EdgeInsets.only(left: 16.0, right: 16.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0),
@@ -126,12 +126,12 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
           ),
-          const Divider(),
+          const Divider(indent: 40.0, endIndent: 40.0, thickness: 1.5),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 24.0),
             child: Card(
-              elevation: 2,
-              color: white,
+              elevation: 10,
+              color: backgroundColor,
               margin: const EdgeInsets.only(left: 16.0, right: 16.0),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8.0),

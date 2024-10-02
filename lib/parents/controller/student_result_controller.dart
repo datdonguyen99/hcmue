@@ -7,6 +7,8 @@ class StudentResultController extends GetxController {
   var services = StudentResultService();
   var semesters = <SemesterModel>[].obs;
   var studentResults = <StudentResultModel>[].obs;
+  var weeklyResults = <WeeklyResultModel>[].obs;
+  var monthlyResults = <MonthlyResultModel>[].obs;
   var isLoading = false.obs;
 
   Future<void> getSemesters() async {
@@ -23,6 +25,24 @@ class StudentResultController extends GetxController {
     try {
       studentResults.value =
           await services.fetchStudentResultBySemester(semesterId);
+    } finally {
+      isLoading.value = false;
+    }
+  }
+
+  Future<void> getStudentResultByWeek() async {
+    isLoading.value = true;
+    try {
+      weeklyResults.value = await services.fetchStudentResultByWeek();
+    } finally {
+      isLoading.value = false;
+    }
+  }
+
+  Future<void> getStudentResultByMonth() async {
+    isLoading.value = true;
+    try {
+      monthlyResults.value = await services.fetchStudentResultByMonth();
     } finally {
       isLoading.value = false;
     }

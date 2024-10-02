@@ -76,7 +76,24 @@ class _StudentHistoryPageState extends State<StudentHistoryPage> {
                                     horizontal: 10,
                                     vertical: 8,
                                   ),
-                                  leading: const Icon(Icons.book),
+                                  leading: ShaderMask(
+                                    shaderCallback: (Rect bounds) {
+                                      return const LinearGradient(
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight,
+                                        colors: <Color>[
+                                          primaryColor,
+                                          secondaryColor,
+                                        ],
+                                        tileMode: TileMode.mirror,
+                                      ).createShader(bounds);
+                                    },
+                                    child: const Icon(
+                                      Icons.book,
+                                      size: 30,
+                                      color: white,
+                                    ),
+                                  ),
                                   title: Text(
                                     courseHistory.title,
                                     style: openSansRegularStyle(fontSize: 15.0),

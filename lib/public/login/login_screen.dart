@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 // import 'package:rounded_loading_button/rounded_loading_button.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'package:hcmue/public/widgets/circuled_button.dart';
 import 'package:hcmue/public/widgets/custom_button.dart';
 import 'package:hcmue/public/widgets/custom_formfield.dart';
@@ -61,7 +62,9 @@ class _LoginScreenState extends State<LoginScreen> {
       } else if (parent) {
         Get.offAllNamed('/prthome');
       } else {
-        showSnackBar('Vui lòng chọn vai trò', context);
+        // showSnackBar('Vui lòng chọn vai trò', context);
+        // EasyLoading.show();
+        showErrorDialog('Vui lòng chọn vai trò!');
       }
 
       setState(() {

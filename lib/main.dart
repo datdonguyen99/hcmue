@@ -18,6 +18,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    configEasyLoading();
   }
 
   @override
@@ -30,12 +31,23 @@ class _MyAppState extends State<MyApp> {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
           fontFamily: 'OpenSans-Medium',
-          scaffoldBackgroundColor: backgroundColor,
+          scaffoldBackgroundColor: Colors.orange.shade50,
         ),
         builder: EasyLoading.init(),
       ),
     );
   }
+}
+
+void configEasyLoading() {
+  EasyLoading.instance
+    ..displayDuration = const Duration(seconds: 3)
+    ..loadingStyle = EasyLoadingStyle.custom
+    ..backgroundColor = white
+    ..indicatorColor = darkGray
+    ..textColor = Colors.black
+    ..maskType = EasyLoadingMaskType.black
+    ..dismissOnTap = true;
 }
 
 Future<void> main() async {
