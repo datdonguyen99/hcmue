@@ -5,6 +5,7 @@ import 'package:hcmue/public/widgets/menu_item.dart';
 import 'package:hcmue/parents/view/student-profile/student_profile.dart';
 import 'package:hcmue/parents/view/student-history/student_history.dart';
 import 'package:hcmue/parents/view/student-result/student_result.dart';
+import 'package:hcmue/parents/view/top-up/top_up.dart';
 import 'package:hcmue/public/utils/constant.dart';
 import 'package:hcmue/public/utils/font_style.dart';
 
@@ -154,7 +155,9 @@ class HomeScreen extends StatelessWidget {
                               secondaryColor,
                             ],
                           ),
-                          press: () => {},
+                          press: () {
+                            Get.to(() => const TopUpPage());
+                          },
                         ),
                         const SizedBox(height: 8.0),
                         Text(

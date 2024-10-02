@@ -13,6 +13,7 @@ import 'package:hcmue/parents/view/home/home.dart';
 import 'package:hcmue/parents/view/student-profile/student_profile.dart';
 import 'package:hcmue/parents/view/student-history/student_history.dart';
 import 'package:hcmue/parents/view/student-result/student_result.dart';
+import 'package:hcmue/parents/view/top-up/top_up.dart';
 
 class AppPages {
   AppPages._();
@@ -27,6 +28,7 @@ class AppPages {
   static const parentStudentProfile = '/prt/sthome';
   static const parentStudentHistory = '/prt/sthistory';
   static const parentStudentResult = '/prt/stresult';
+  static const parentTopUp = '/prt/topup';
 
   static final routes = [
     GetPage(
@@ -71,6 +73,10 @@ class AppPages {
     GetPage(
       name: parentStudentResult,
       page: () => const StudentResultPage(),
+    ),
+    GetPage(
+      name: parentTopUp,
+      page: () => const TopUpPage(),
     ),
   ];
 }
