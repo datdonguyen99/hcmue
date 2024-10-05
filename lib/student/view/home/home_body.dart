@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-// import 'package:table_calendar/table_calendar.dart';
+import 'package:get/get.dart';
+
+import 'package:hcmue/student/view/courses/courses.dart';
 import 'package:hcmue/public/widgets/menu_item.dart';
+import 'package:hcmue/public/utils/constant.dart';
+import 'package:hcmue/public/utils/font_style.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,83 +14,164 @@ class HomeScreen extends StatelessWidget {
     return SingleChildScrollView(
       child: Column(
         children: [
-          const Padding(
-            padding: EdgeInsets.all(16.0),
-            child: Text('Chào buổi sáng', style: TextStyle(fontSize: 10)),
-          ),
-          Expanded(
-            child: GridView.count(
-              crossAxisCount: 4,
-              padding: const EdgeInsets.all(8.0),
-              children: <Widget>[
-                menuItem(
-                  icon: Icons.payment_outlined,
-                  press: () => {},
-                ),
-                menuItem(
-                  icon: Icons.check_circle_outline,
-                  press: () => {},
-                ),
-              ],
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24.0),
+            child: Card(
+              elevation: 10,
+              color: backgroundColor,
+              margin: const EdgeInsets.only(left: 16.0, right: 16.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.school_outlined,
+                          color: const LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              Colors.purple,
+                              Colors.orange,
+                            ],
+                          ),
+                          press: () {
+                            Get.to(() => const CoursesPage());
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Các khóa học',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.description,
+                          color: const LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              darkTurquoise,
+                              primaryColor,
+                            ],
+                          ),
+                          press: () {
+                            // Get.to(() => const StudentHistoryPage());
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Lịch sử',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.assessment,
+                          color: const LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              Colors.lightGreenAccent,
+                              Colors.lightGreen,
+                            ],
+                          ),
+                          press: () {
+                            // Get.to(() => const StudentResultPage());
+                            // Get.toNamed('/prt/sthome');
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Kết quả',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
-          // const SizedBox(
-          // height: 8,
-          // ),
-          // Container(
-          //   height: 255,
-          //   width: 300,
-          //   decoration: BoxDecoration(
-          //     borderRadius: BorderRadius.circular(12.0),
-          //     color: Colors.white,
-          //   ),
-          //   child: Padding(
-          //     padding: const EdgeInsets.all(12.0),
-          //     child: TableCalendar(
-          //       rowHeight: 52,
-          //       firstDay: DateTime.utc(2022, 7, 1),
-          //       lastDay: DateTime.utc(2030, 3, 14),
-          //       focusedDay: DateTime.now(),
-          //       shouldFillViewport: true,
-          //       daysOfWeekHeight: 15,
-          //       calendarStyle: const CalendarStyle(
-          //         defaultTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         weekendTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         todayTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         holidayTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         outsideTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         disabledTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         rangeEndTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         selectedTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         rangeStartTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //         withinRangeTextStyle: TextStyle(
-          //           fontSize: 10,
-          //         ),
-          //       ),
-          //     ),
-          //   ),
-          // ),
-          // const SizedBox(
-          //   height: 10,
-          // ),
+          const Divider(indent: 40.0, endIndent: 40.0, thickness: 1.5),
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 24.0),
+            child: Card(
+              elevation: 10,
+              color: backgroundColor,
+              margin: const EdgeInsets.only(left: 16.0, right: 16.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.account_balance,
+                          color: const LinearGradient(
+                            begin: Alignment.centerLeft,
+                            end: Alignment.centerRight,
+                            colors: [
+                              orange,
+                              secondaryColor,
+                            ],
+                          ),
+                          press: () {
+                            // Get.to(() => const TopUpPage());
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Nạp tiền',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );

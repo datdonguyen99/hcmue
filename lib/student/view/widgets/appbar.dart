@@ -5,7 +5,7 @@ import 'package:hcmue/public/utils/constant.dart';
 
 AppBar customAppBar({String? title, TextStyle? style, Function()? ontap}) {
   return AppBar(
-    elevation: 5,
+    elevation: 5.0,
     title: Text(
       '$title',
       style: style,

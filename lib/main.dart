@@ -53,5 +53,10 @@ void configEasyLoading() {
 Future<void> main() async {
   await GetStorage.init();
   WidgetsFlutterBinding.ensureInitialized();
+  FlutterError.onError = (FlutterErrorDetails details) {
+    FlutterError.dumpErrorToConsole(details);
+    // Addtional error logging
+  };
+
   runApp(Phoenix(child: const MyApp()));
 }
