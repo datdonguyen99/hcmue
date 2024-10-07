@@ -8,6 +8,7 @@ class CourseModel {
     required this.totalHours,
     required this.lectures,
     required this.quizzes,
+    required this.price,
   });
 
   final String title;
@@ -18,6 +19,7 @@ class CourseModel {
   final double totalHours;
   final int lectures;
   final int quizzes;
+  final int price;
 
   factory CourseModel.fromJson(Map<String, dynamic> json) {
     return CourseModel(
@@ -36,6 +38,7 @@ class CourseModel {
           : int.parse(json['lectures']),
       quizzes:
           json['quizzes'] is int ? json['quizzes'] : int.parse(json['quizzes']),
+      price: json['price'] is int ? json['price'] : int.parse(json['price']),
     );
   }
 }

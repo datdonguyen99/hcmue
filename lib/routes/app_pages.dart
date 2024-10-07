@@ -6,6 +6,7 @@ import 'package:hcmue/student/binding/home.dart';
 import 'package:hcmue/student/binding/notification.dart';
 import 'package:hcmue/student/binding/profile.dart';
 import 'package:hcmue/student/view/home/home.dart';
+import 'package:hcmue/student/view/my-courses/my_courses.dart';
 import 'package:hcmue/student/view/chat/chat_page.dart';
 import 'package:hcmue/student/view/notification/notification_page.dart';
 import 'package:hcmue/student/view/profile/profile_page.dart';
@@ -21,6 +22,7 @@ class AppPages {
   static const initial = '/login';
   static const splashScreen = '/splash';
   static const studentHome = '/sthome';
+  static const studentCourses = '/stcourses';
   static const studentChat = '/stchat';
   static const studentNoti = '/stnoti';
   static const studentProfile = '/stprofile';
@@ -43,6 +45,10 @@ class AppPages {
       name: studentHome,
       page: () => const StudentHome(),
       binding: HomeBinding(),
+    ),
+    GetPage(
+      name: studentCourses,
+      page: () => const MyCoursesPage(),
     ),
     GetPage(
       name: studentChat,

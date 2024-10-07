@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import 'package:hcmue/student/view/courses/courses.dart';
+import 'package:hcmue/student/view/my-courses/my_courses.dart';
 import 'package:hcmue/public/widgets/menu_item.dart';
 import 'package:hcmue/public/utils/constant.dart';
 import 'package:hcmue/public/utils/font_style.dart';
@@ -143,22 +144,22 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         menuItem(
-                          icon: Icons.account_balance,
+                          icon: Icons.menu_book,
                           color: const LinearGradient(
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
                             colors: [
                               orange,
                               secondaryColor,
                             ],
                           ),
                           press: () {
-                            // Get.to(() => const TopUpPage());
+                            Get.to(() => const MyCoursesPage());
                           },
                         ),
                         const SizedBox(height: 8.0),
                         Text(
-                          'Nạp tiền',
+                          'Khóa học của tôi',
                           textAlign: TextAlign.center,
                           style: openSansMediumStyle(
                             fontSize: 12.0,

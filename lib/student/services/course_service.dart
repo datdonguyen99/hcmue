@@ -1,7 +1,5 @@
-import 'package:hcmue/student/models/course_model.dart';
-
 class CourseService {
-  Future<List<CourseModel>> fetchCourseByClass() async {
+  Future<List<dynamic>> fetchCourseByClass() async {
     try {
       final Map<String, dynamic> mockResponse = {
         'statusCode': 200,
@@ -16,6 +14,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 5100000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -27,6 +26,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 4520000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -38,6 +38,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 4030000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -49,6 +50,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 3504000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -60,6 +62,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -71,6 +74,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 6080000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -82,6 +86,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -93,6 +98,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -104,6 +110,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -115,6 +122,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -126,6 +134,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -137,6 +146,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -148,6 +158,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -159,6 +170,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -170,8 +182,9 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
-          //start finite data
+          //start infinite loop
           {
             'title': 'Khóa học Flutter cơ bản',
             'description':
@@ -182,6 +195,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -193,6 +207,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -204,6 +219,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -215,6 +231,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -226,6 +243,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -237,6 +255,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -248,6 +267,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -259,6 +279,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -270,6 +291,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -281,6 +303,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -292,6 +315,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -303,6 +327,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -314,6 +339,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -325,6 +351,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -336,171 +363,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
-          },
-          {
-            'title': 'Khóa học Flutter cơ bản',
-            'description':
-                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
-            'image_url': 'https://via.placeholder.com/150.jpg',
-            'rating': 4.5,
-            'total_hours': 40.0,
-            'lectures': 20,
-            'quizzes': 5,
-            'author': 'Nguyen Van A',
-          },
-          {
-            'title': 'Khóa học Lập trình React Native',
-            'description':
-                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.8,
-            'total_hours': 35.5,
-            'lectures': 18,
-            'quizzes': 4,
-            'author': 'Tran Thi B',
-          },
-          {
-            'title': 'Khóa học Node.js cơ bản',
-            'description':
-                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 3.7,
-            'total_hours': 45.6,
-            'lectures': 22,
-            'quizzes': 6,
-            'author': 'Pham Van C',
-          },
-          {
-            'title': 'Khóa học Vue.js cơ bản',
-            'description':
-                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 2.4,
-            'total_hours': 30.0,
-            'lectures': 16,
-            'quizzes': 3,
-            'author': 'Le Thi D',
-          },
-          {
-            'title': 'Khóa học Lập trình Python',
-            'description':
-                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 1.2,
-            'total_hours': 50.3,
-            'lectures': 24,
-            'quizzes': 7,
-            'author': 'Nguyen Van E',
-          },
-          {
-            'title': 'Khóa học Lập trình Java cơ bản',
-            'description':
-                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.9,
-            'total_hours': 38.1,
-            'lectures': 20,
-            'quizzes': 5,
-            'author': 'Nguyen Thi F',
-          },
-          {
-            'title': 'Khóa học Lập trình C#',
-            'description':
-                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 3.3,
-            'total_hours': 36.9,
-            'lectures': 18,
-            'quizzes': 4,
-            'author': 'Tran Van G',
-          },
-          {
-            'title': 'Khóa học SQL cho người mới bắt đầu',
-            'description':
-                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.8,
-            'total_hours': 32.0,
-            'lectures': 16,
-            'quizzes': 3,
-            'author': 'Pham Thi H',
-          },
-          {
-            'title': 'Khóa học HTML & CSS',
-            'description':
-                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.1,
-            'total_hours': 28.6,
-            'lectures': 14,
-            'quizzes': 4,
-            'author': 'Le Van I',
-          },
-          {
-            'title': 'Khóa học JavaScript Nâng Cao',
-            'description':
-                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 3.5,
-            'total_hours': 40.4,
-            'lectures': 20,
-            'quizzes': 6,
-            'author': 'Nguyen Van K',
-          },
-          {
-            'title': 'Khóa học Phát triển Web với Django',
-            'description':
-                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.7,
-            'total_hours': 42.0,
-            'lectures': 22,
-            'quizzes': 5,
-            'author': 'Tran Van L',
-          },
-          {
-            'title': 'Khóa học Lập trình Android với Kotlin',
-            'description':
-                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.4,
-            'total_hours': 46.9,
-            'lectures': 24,
-            'quizzes': 7,
-            'author': 'Le Thi M',
-          },
-          {
-            'title': 'Khóa học DevOps cơ bản',
-            'description':
-                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.9,
-            'total_hours': 60.0,
-            'lectures': 30,
-            'quizzes': 8,
-            'author': 'Nguyen Van N',
-          },
-          {
-            'title': 'Khóa học An ninh mạng cơ bản',
-            'description':
-                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.3,
-            'total_hours': 34.3,
-            'lectures': 18,
-            'quizzes': 5,
-            'author': 'Pham Van O',
-          },
-          {
-            'title': 'Khóa học Machine Learning cơ bản',
-            'description':
-                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
-            'image_url': 'https://via.placeholder.com/150',
-            'rating': 4.6,
-            'total_hours': 55.7,
-            'lectures': 26,
-            'quizzes': 9,
-            'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -512,6 +375,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -523,6 +387,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -534,6 +399,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -545,6 +411,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -556,6 +423,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -567,6 +435,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -578,6 +447,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -589,6 +459,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -600,6 +471,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -611,6 +483,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -622,6 +495,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -633,6 +507,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -644,6 +519,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -655,6 +531,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -666,6 +543,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -677,6 +555,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -688,6 +567,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -699,6 +579,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -710,6 +591,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -721,6 +603,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -732,6 +615,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -743,6 +627,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -754,6 +639,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -765,6 +651,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -776,6 +663,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -787,6 +675,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -798,6 +687,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -809,6 +699,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -820,6 +711,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -831,6 +723,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -842,6 +735,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -853,6 +747,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -864,6 +759,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -875,6 +771,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -886,6 +783,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -897,6 +795,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -908,6 +807,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -919,6 +819,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -930,6 +831,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -941,6 +843,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -952,6 +855,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -963,6 +867,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -974,6 +879,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -985,6 +891,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -996,6 +903,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1007,6 +915,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1018,6 +927,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1029,6 +939,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1040,6 +951,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1051,6 +963,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1062,6 +975,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1073,6 +987,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1084,6 +999,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1095,6 +1011,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1106,6 +1023,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1117,6 +1035,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1128,6 +1047,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1139,6 +1059,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1150,6 +1071,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1161,6 +1083,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1172,6 +1095,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1183,6 +1107,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1194,6 +1119,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1205,6 +1131,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1216,6 +1143,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1227,6 +1155,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1238,6 +1167,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1249,6 +1179,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1260,6 +1191,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1271,6 +1203,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1282,6 +1215,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1293,6 +1227,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1304,6 +1239,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1315,6 +1251,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1326,6 +1263,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1337,6 +1275,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1348,6 +1287,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1359,6 +1299,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1370,6 +1311,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1381,6 +1323,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1392,6 +1335,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1403,6 +1347,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1414,6 +1359,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1425,6 +1371,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1436,6 +1383,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1447,6 +1395,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1458,6 +1407,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1469,6 +1419,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1480,6 +1431,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1491,6 +1443,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1502,6 +1455,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1513,6 +1467,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1524,6 +1479,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1535,6 +1491,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1546,6 +1503,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1557,6 +1515,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1568,6 +1527,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1579,6 +1539,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1590,6 +1551,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1601,6 +1563,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1612,6 +1575,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1623,6 +1587,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1634,6 +1599,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1645,6 +1611,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1656,6 +1623,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1667,6 +1635,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1678,6 +1647,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1689,6 +1659,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1700,6 +1671,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1711,6 +1683,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1722,6 +1695,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1733,6 +1707,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1744,6 +1719,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1755,6 +1731,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1766,6 +1743,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1777,6 +1755,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1788,6 +1767,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1799,6 +1779,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1810,6 +1791,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1821,6 +1803,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1832,6 +1815,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -1843,6 +1827,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -1854,6 +1839,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -1865,6 +1851,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -1876,6 +1863,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -1887,6 +1875,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -1898,6 +1887,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -1909,6 +1899,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -1920,6 +1911,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -1931,6 +1923,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -1942,6 +1935,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -1953,6 +1947,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -1964,6 +1959,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -1975,6 +1971,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -1986,6 +1983,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -1997,6 +1995,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -2008,6 +2007,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -2019,6 +2019,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -2030,6 +2031,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -2041,6 +2043,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -2052,6 +2055,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -2063,6 +2067,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -2074,6 +2079,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -2085,6 +2091,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -2096,6 +2103,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -2107,6 +2115,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -2118,6 +2127,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -2129,6 +2139,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -2140,6 +2151,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -2151,6 +2163,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -2162,6 +2175,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -2173,6 +2187,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -2184,6 +2199,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -2195,6 +2211,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -2206,6 +2223,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -2217,6 +2235,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -2228,6 +2247,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -2239,6 +2259,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -2250,6 +2271,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -2261,6 +2283,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -2272,6 +2295,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -2283,6 +2307,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 6500000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -2294,6 +2319,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -2305,6 +2331,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -2316,6 +2343,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -2327,6 +2355,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -2338,6 +2367,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -2349,6 +2379,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -2360,6 +2391,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -2371,6 +2403,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -2382,6 +2415,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -2393,6 +2427,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -2404,6 +2439,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -2415,6 +2451,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -2426,6 +2463,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -2437,6 +2475,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -2448,6 +2487,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -2459,6 +2499,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -2470,6 +2511,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -2481,6 +2523,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
           },
           {
             'title': 'Khóa học Flutter cơ bản',
@@ -2492,6 +2535,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 500000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -2503,6 +2547,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 450000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -2514,6 +2559,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 400000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -2525,6 +2571,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 350000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -2536,6 +2583,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 300000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -2547,6 +2595,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 600000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -2558,6 +2607,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 480000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -2569,6 +2619,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 470000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -2580,6 +2631,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 290000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -2591,6 +2643,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 550000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -2602,6 +2655,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 700000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -2613,6 +2667,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 650000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -2624,6 +2679,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 800000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -2635,6 +2691,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 430000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -2646,6 +2703,2707 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
+          },
+          {
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 500000,
+          },
+          {
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 450000,
+          },
+          {
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 400000,
+          },
+          {
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 350000,
+          },
+          {
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 300000,
+          },
+          {
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 600000,
+          },
+          {
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 480000,
+          },
+          {
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 470000,
+          },
+          {
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 290000,
+          },
+          {
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 550000,
+          },
+          {
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 700000,
+          },
+          {
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 650000,
+          },
+          {
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 800000,
+          },
+          {
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 430000,
+          },
+          {
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 720000,
           },
         ]
       };
@@ -2655,16 +5413,16 @@ class CourseService {
 
       if (mockResponse['statusCode'] == 200) {
         List<dynamic> data = List<dynamic>.from(mockResponse['data'] as List);
-        return data.map((json) => CourseModel.fromJson(json)).toList();
+        return data;
       } else {
         throw Exception('Failed to load course by class');
       }
     } catch (e) {
-      return <CourseModel>[];
+      throw Exception('An error occurred: $e');
     }
   }
 
-  Future<List<CourseModel>> fetchCourseByGrade() async {
+  Future<List<dynamic>> fetchCourseByGrade() async {
     try {
       final Map<String, dynamic> mockResponse = {
         'statusCode': 200,
@@ -2679,6 +5437,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Van A',
+            'price': 10000000,
           },
           {
             'title': 'Khóa học Lập trình React Native',
@@ -2690,6 +5449,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Thi B',
+            'price': 200000,
           },
           {
             'title': 'Khóa học Node.js cơ bản',
@@ -2701,6 +5461,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 6,
             'author': 'Pham Van C',
+            'price': 185000,
           },
           {
             'title': 'Khóa học Vue.js cơ bản',
@@ -2712,6 +5473,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Le Thi D',
+            'price': 231000,
           },
           {
             'title': 'Khóa học Lập trình Python',
@@ -2723,6 +5485,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Nguyen Van E',
+            'price': 327000,
           },
           {
             'title': 'Khóa học Lập trình Java cơ bản',
@@ -2734,6 +5497,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 5,
             'author': 'Nguyen Thi F',
+            'price': 111000,
           },
           {
             'title': 'Khóa học Lập trình C#',
@@ -2745,6 +5509,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 4,
             'author': 'Tran Van G',
+            'price': 89000,
           },
           {
             'title': 'Khóa học SQL cho người mới bắt đầu',
@@ -2756,6 +5521,7 @@ class CourseService {
             'lectures': 16,
             'quizzes': 3,
             'author': 'Pham Thi H',
+            'price': 120000,
           },
           {
             'title': 'Khóa học HTML & CSS',
@@ -2767,6 +5533,7 @@ class CourseService {
             'lectures': 14,
             'quizzes': 4,
             'author': 'Le Van I',
+            'price': 187000,
           },
           {
             'title': 'Khóa học JavaScript Nâng Cao',
@@ -2778,6 +5545,7 @@ class CourseService {
             'lectures': 20,
             'quizzes': 6,
             'author': 'Nguyen Van K',
+            'price': 258000,
           },
           {
             'title': 'Khóa học Phát triển Web với Django',
@@ -2789,6 +5557,7 @@ class CourseService {
             'lectures': 22,
             'quizzes': 5,
             'author': 'Tran Van L',
+            'price': 452000,
           },
           {
             'title': 'Khóa học Lập trình Android với Kotlin',
@@ -2800,6 +5569,7 @@ class CourseService {
             'lectures': 24,
             'quizzes': 7,
             'author': 'Le Thi M',
+            'price': 422000,
           },
           {
             'title': 'Khóa học DevOps cơ bản',
@@ -2811,6 +5581,7 @@ class CourseService {
             'lectures': 30,
             'quizzes': 8,
             'author': 'Nguyen Van N',
+            'price': 244000,
           },
           {
             'title': 'Khóa học An ninh mạng cơ bản',
@@ -2822,6 +5593,7 @@ class CourseService {
             'lectures': 18,
             'quizzes': 5,
             'author': 'Pham Van O',
+            'price': 258000,
           },
           {
             'title': 'Khóa học Machine Learning cơ bản',
@@ -2833,6 +5605,7 @@ class CourseService {
             'lectures': 26,
             'quizzes': 9,
             'author': 'Le Van P',
+            'price': 346000,
           },
         ]
       };
@@ -2842,12 +5615,229 @@ class CourseService {
 
       if (mockResponse['statusCode'] == 200) {
         List<dynamic> data = List<dynamic>.from(mockResponse['data'] as List);
-        return data.map((json) => CourseModel.fromJson(json)).toList();
+        return data;
       } else {
         throw Exception('Failed to load course by grade');
       }
     } catch (e) {
-      return <CourseModel>[];
+      throw Exception('An error occurred: $e');
+    }
+  }
+
+  Future<List<dynamic>> fetchMyCourses() async {
+    try {
+      final Map<String, dynamic> mockResponse = {
+        'statusCode': 200,
+        'data': [
+          {
+            'id': 1,
+            'title': 'Khóa học Flutter cơ bản',
+            'description':
+                'Khóa học Flutter cơ bản cung cấp những kiến thức nền tảng về Flutter, một bộ công cụ phát triển giao diện di động của Google. Khóa học sẽ hướng dẫn học viên cách tạo các ứng dụng di động trên cả iOS và Android từ bước đầu tiên, bao gồm việc thiết lập môi trường phát triển, xây dựng giao diện người dùng cơ bản, quản lý trạng thái và tích hợp dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150.jpg',
+            'rating': 4.5,
+            'total_hours': 40.0,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Van A',
+            'price': 10000000,
+          },
+          {
+            'id': 2,
+            'title': 'Khóa học Lập trình React Native',
+            'description':
+                'Khóa học này giới thiệu cách xây dựng ứng dụng di động sử dụng React Native, giúp học viên nắm bắt cách tạo ra các ứng dụng đa nền tảng một cách dễ dàng và hiệu quả.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 35.5,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Thi B',
+            'price': 200000,
+          },
+          {
+            'id': 3,
+            'title': 'Khóa học Node.js cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn bạn về Node.js, một môi trường chạy JavaScript trên server, từ các kiến thức cơ bản đến xây dựng các ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.7,
+            'total_hours': 45.6,
+            'lectures': 22,
+            'quizzes': 6,
+            'author': 'Pham Van C',
+            'price': 185000,
+          },
+          {
+            'id': 4,
+            'title': 'Khóa học Vue.js cơ bản',
+            'description':
+                'Học cách xây dựng ứng dụng giao diện với Vue.js, một framework JavaScript nhẹ và linh hoạt. Khóa học bao gồm các kiến thức cơ bản như component, directive và quản lý trạng thái.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 2.4,
+            'total_hours': 30.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Le Thi D',
+            'price': 231000,
+          },
+          {
+            'id': 5,
+            'title': 'Khóa học Lập trình Python',
+            'description':
+                'Khóa học Python cơ bản này giúp bạn làm quen với ngôn ngữ lập trình Python, từ cú pháp cơ bản đến các ứng dụng thực tế như phân tích dữ liệu và học máy.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 1.2,
+            'total_hours': 50.3,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Nguyen Van E',
+            'price': 327000,
+          },
+          {
+            'id': 6,
+            'title': 'Khóa học Lập trình Java cơ bản',
+            'description':
+                'Khóa học giúp bạn nắm vững các khái niệm lập trình Java, một trong những ngôn ngữ phổ biến nhất hiện nay, từ các cấu trúc cơ bản đến lập trình hướng đối tượng.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 38.1,
+            'lectures': 20,
+            'quizzes': 5,
+            'author': 'Nguyen Thi F',
+            'price': 111000,
+          },
+          {
+            'id': 7,
+            'title': 'Khóa học Lập trình C#',
+            'description':
+                'Khóa học C# cơ bản này giới thiệu về lập trình với C#, ngôn ngữ chính trong môi trường .NET, với các bài học từ cơ bản đến nâng cao.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.3,
+            'total_hours': 36.9,
+            'lectures': 18,
+            'quizzes': 4,
+            'author': 'Tran Van G',
+            'price': 89000,
+          },
+          {
+            'id': 8,
+            'title': 'Khóa học SQL cho người mới bắt đầu',
+            'description':
+                'Khóa học này sẽ hướng dẫn cách làm việc với cơ sở dữ liệu SQL, bao gồm việc viết các truy vấn, cập nhật và quản lý dữ liệu trong các hệ thống cơ sở dữ liệu.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.8,
+            'total_hours': 32.0,
+            'lectures': 16,
+            'quizzes': 3,
+            'author': 'Pham Thi H',
+            'price': 120000,
+          },
+          {
+            'id': 9,
+            'title': 'Khóa học HTML & CSS',
+            'description':
+                'Khóa học này sẽ dạy bạn cách xây dựng và thiết kế các trang web cơ bản bằng HTML và CSS, bao gồm cách sử dụng các công cụ thiết kế hiện đại.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.1,
+            'total_hours': 28.6,
+            'lectures': 14,
+            'quizzes': 4,
+            'author': 'Le Van I',
+            'price': 187000,
+          },
+          {
+            'id': 10,
+            'title': 'Khóa học JavaScript Nâng Cao',
+            'description':
+                'Khóa học này tập trung vào các kỹ thuật lập trình JavaScript nâng cao, bao gồm các chủ đề như async/await, closure và prototype.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 3.5,
+            'total_hours': 40.4,
+            'lectures': 20,
+            'quizzes': 6,
+            'author': 'Nguyen Van K',
+            'price': 258000,
+          },
+          {
+            'id': 11,
+            'title': 'Khóa học Phát triển Web với Django',
+            'description':
+                'Khóa học này sẽ giúp bạn học cách xây dựng các ứng dụng web mạnh mẽ và bảo mật bằng cách sử dụng Django, một framework nổi tiếng của Python.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.7,
+            'total_hours': 42.0,
+            'lectures': 22,
+            'quizzes': 5,
+            'author': 'Tran Van L',
+            'price': 452000,
+          },
+          {
+            'id': 12,
+            'title': 'Khóa học Lập trình Android với Kotlin',
+            'description':
+                'Khóa học này sẽ giới thiệu cách lập trình ứng dụng Android sử dụng Kotlin, ngôn ngữ chính thức cho lập trình Android, từ cơ bản đến ứng dụng thực tế.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.4,
+            'total_hours': 46.9,
+            'lectures': 24,
+            'quizzes': 7,
+            'author': 'Le Thi M',
+            'price': 422000,
+          },
+          {
+            'id': 13,
+            'title': 'Khóa học DevOps cơ bản',
+            'description':
+                'Khóa học này giới thiệu về DevOps, một phương pháp giúp cải thiện quy trình phát triển phần mềm, bao gồm các công cụ như Docker, Kubernetes và CI/CD.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.9,
+            'total_hours': 60.0,
+            'lectures': 30,
+            'quizzes': 8,
+            'author': 'Nguyen Van N',
+            'price': 244000,
+          },
+          {
+            'id': 14,
+            'title': 'Khóa học An ninh mạng cơ bản',
+            'description':
+                'Khóa học này sẽ hướng dẫn các khái niệm cơ bản về an ninh mạng, bảo vệ hệ thống khỏi các mối đe dọa, và các công cụ bảo mật phổ biến như tường lửa và mã hóa.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.3,
+            'total_hours': 34.3,
+            'lectures': 18,
+            'quizzes': 5,
+            'author': 'Pham Van O',
+            'price': 258000,
+          },
+          {
+            'id': 15,
+            'title': 'Khóa học Machine Learning cơ bản',
+            'description':
+                'Khóa học này giới thiệu về các thuật toán học máy cơ bản, cách áp dụng chúng vào các dự án thực tế, và cách phân tích dữ liệu sử dụng Python và TensorFlow.',
+            'image_url': 'https://via.placeholder.com/150',
+            'rating': 4.6,
+            'total_hours': 55.7,
+            'lectures': 26,
+            'quizzes': 9,
+            'author': 'Le Van P',
+            'price': 346000,
+          },
+        ]
+      };
+
+      // Simulate a delay (optional, to mimic network latency)
+      await Future.delayed(const Duration(seconds: 2));
+
+      if (mockResponse['statusCode'] == 200) {
+        List<dynamic> data = List<dynamic>.from(mockResponse['data'] as List);
+        return data;
+      } else {
+        throw Exception('Failed to load my course');
+      }
+    } catch (e) {
+      throw Exception('An error occurred: $e');
     }
   }
 }
