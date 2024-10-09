@@ -7,6 +7,7 @@ import 'package:hcmue/student/binding/notification.dart';
 import 'package:hcmue/student/binding/profile.dart';
 import 'package:hcmue/student/view/home/home.dart';
 import 'package:hcmue/student/view/my-courses/my_courses.dart';
+import 'package:hcmue/student/view/quiz/quiz_result.dart';
 import 'package:hcmue/student/view/chat/chat_page.dart';
 import 'package:hcmue/student/view/notification/notification_page.dart';
 import 'package:hcmue/student/view/profile/profile_page.dart';
@@ -23,6 +24,7 @@ class AppPages {
   static const splashScreen = '/splash';
   static const studentHome = '/sthome';
   static const studentCourses = '/stcourses';
+  static const studentQuizResults = '/stquiz/result';
   static const studentChat = '/stchat';
   static const studentNoti = '/stnoti';
   static const studentProfile = '/stprofile';
@@ -49,6 +51,10 @@ class AppPages {
     GetPage(
       name: studentCourses,
       page: () => const MyCoursesPage(),
+    ),
+    GetPage(
+      name: studentQuizResults,
+      page: () => const QuizResultPage(),
     ),
     GetPage(
       name: studentChat,

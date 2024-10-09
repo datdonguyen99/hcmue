@@ -1,0 +1,298 @@
+class QuizResultService {
+  Future<List<dynamic>> fetchQuizResultByStudentId() async {
+    try {
+      final Map<String, dynamic> mockResponse = {
+        'statusCode': 200,
+        'data': [
+          // Quiz 1 - Quản Lý Trạng Thái
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 1,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 2,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 3,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 4,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 5,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 6,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 7,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 8,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 9,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_1',
+            'title': 'Quiz Quản Lý Trạng Thái',
+            'total_questions': 10,
+            'total_correct_answers': 7,
+            'score': 0.7,
+            'question_id': 10,
+            'is_correct': true,
+          },
+
+          // Quiz 2 - Vòng Lặp
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 1,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 2,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 3,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 4,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 5,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 6,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 7,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 8,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 9,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_2',
+            'title': 'Quiz Vòng Lặp',
+            'total_questions': 10,
+            'total_correct_answers': 5,
+            'score': 0.5,
+            'question_id': 10,
+            'is_correct': false,
+          },
+
+          // Quiz 3 - Xử Lý Chuỗi
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 1,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 2,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 3,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 4,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 5,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 6,
+            'is_correct': false,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 7,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 8,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 9,
+            'is_correct': true,
+          },
+          {
+            'quiz_id': 'quiz_3',
+            'title': 'Quiz Xử Lý Chuỗi',
+            'total_questions': 10,
+            'total_correct_answers': 8,
+            'score': 0.8,
+            'question_id': 10,
+            'is_correct': false,
+          }
+        ]
+      };
+
+      // Simulate a delay (optional, to mimic network latency)
+      await Future.delayed(const Duration(seconds: 2));
+
+      if (mockResponse['statusCode'] == 200) {
+        List<dynamic> data = List<dynamic>.from(mockResponse['data'] as List);
+        return data;
+      } else {
+        throw Exception('Failed to load quiz result');
+      }
+    } catch (e) {
+      throw Exception('An error occurred: $e');
+    }
+  }
+}

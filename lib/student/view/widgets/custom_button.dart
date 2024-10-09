@@ -10,6 +10,7 @@ class CustomButton extends StatelessWidget {
     this.height,
     required this.title,
     this.bgColor,
+    this.style,
     required this.press,
   });
 
@@ -17,6 +18,7 @@ class CustomButton extends StatelessWidget {
   final double? height;
   final String title;
   final LinearGradient? bgColor;
+  final TextStyle? style;
   final Function press;
 
   @override
@@ -33,7 +35,7 @@ class CustomButton extends StatelessWidget {
         child: Center(
           child: Text(
             title,
-            style: openSansMediumStyle(fontSize: 16.0, color: white),
+            style: style ?? openSansMediumStyle(fontSize: 16.0, color: white),
           ),
         ),
       ),
