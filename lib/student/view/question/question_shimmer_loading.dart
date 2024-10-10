@@ -5,8 +5,8 @@ import 'package:shimmer/shimmer.dart';
 import 'package:hcmue/student/view/widgets/skeleton.dart';
 import 'package:hcmue/public/utils/constant.dart';
 
-class MyCoursesShimmerLoading extends StatelessWidget {
-  const MyCoursesShimmerLoading({super.key});
+class QuestionShimmerLoading extends StatelessWidget {
+  const QuestionShimmerLoading({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +15,7 @@ class MyCoursesShimmerLoading extends StatelessWidget {
       child: Column(
         children: List.generate(3, (idx) {
           return Card(
-            elevation: 4,
+            elevation: 4.0,
             color: white,
             margin: const EdgeInsets.symmetric(vertical: 10.0),
             child: Padding(
@@ -29,29 +29,38 @@ class MyCoursesShimmerLoading extends StatelessWidget {
                 child: Row(
                   children: [
                     Skeleton(
-                      width: 100.w,
-                      height: 100.h,
-                      decoration: BoxDecoration(
+                      width: 40.w,
+                      height: 40.h,
+                      decoration: const BoxDecoration(
                         color: white,
-                        borderRadius: BorderRadius.circular(10.0),
+                        shape: BoxShape.circle,
                       ),
                     ),
-                    const SizedBox(width: 20.0),
+                    const SizedBox(width: 10.0),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Skeleton(
-                          width: 200.w,
+                          width: 120.w,
                           height: 15.h,
                           decoration: BoxDecoration(
                             color: white,
                             borderRadius: BorderRadius.circular(20.0),
                           ),
                         ),
-                        const SizedBox(height: 15.0),
+                        const SizedBox(height: 5.0),
                         Skeleton(
-                          width: 180.w,
-                          height: 35.h,
+                          width: 60.w,
+                          height: 8.h,
+                          decoration: BoxDecoration(
+                            color: white,
+                            borderRadius: BorderRadius.circular(20.0),
+                          ),
+                        ),
+                        const SizedBox(height: 20.0),
+                        Skeleton(
+                          width: 150.w,
+                          height: 10.h,
                           decoration: BoxDecoration(
                             color: white,
                             borderRadius: BorderRadius.circular(20.0),
@@ -59,17 +68,8 @@ class MyCoursesShimmerLoading extends StatelessWidget {
                         ),
                         const SizedBox(height: 10.0),
                         Skeleton(
-                          width: 180.w,
-                          height: 35.h,
-                          decoration: BoxDecoration(
-                            color: white,
-                            borderRadius: BorderRadius.circular(20.0),
-                          ),
-                        ),
-                        const SizedBox(height: 10.0),
-                        Skeleton(
-                          width: 180.w,
-                          height: 35.h,
+                          width: 200.w,
+                          height: 10.h,
                           decoration: BoxDecoration(
                             color: white,
                             borderRadius: BorderRadius.circular(20.0),

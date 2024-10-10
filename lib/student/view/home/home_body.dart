@@ -49,70 +49,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         const SizedBox(height: 8.0),
                         Text(
-                          'Các khóa học',
-                          textAlign: TextAlign.center,
-                          style: openSansMediumStyle(
-                            fontSize: 12.0,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 32.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        menuItem(
-                          icon: Icons.description,
-                          color: const LinearGradient(
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
-                            colors: [
-                              darkTurquoise,
-                              primaryColor,
-                            ],
-                          ),
-                          press: () {
-                            // Get.to(() => const StudentHistoryPage());
-                          },
-                        ),
-                        const SizedBox(height: 8.0),
-                        Text(
-                          'Lịch sử',
-                          textAlign: TextAlign.center,
-                          style: openSansMediumStyle(
-                            fontSize: 12.0,
-                            color: Colors.black,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 32.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        menuItem(
-                          icon: Icons.assessment,
-                          color: const LinearGradient(
-                            begin: Alignment.centerLeft,
-                            end: Alignment.centerRight,
-                            colors: [
-                              Colors.lightGreenAccent,
-                              Colors.lightGreen,
-                            ],
-                          ),
-                          press: () {
-                            // Get.to(() => const StudentResultPage());
-                            // Get.toNamed('/prt/sthome');
-                          },
-                        ),
-                        const SizedBox(height: 8.0),
-                        Text(
-                          'Kết quả',
+                          'Khóa học',
                           textAlign: TextAlign.center,
                           style: openSansMediumStyle(
                             fontSize: 12.0,
@@ -170,6 +107,37 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.question_answer,
+                          color: const LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [
+                              darkTurquoise,
+                              primaryColor,
+                            ],
+                          ),
+                          press: () {
+                            Get.to(() => const MyCoursesPage());
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Câu hỏi',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -195,8 +163,8 @@ class HomeScreen extends StatelessWidget {
                         menuItem(
                           icon: Icons.check_circle,
                           color: const LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
+                            begin: Alignment.bottomLeft,
+                            end: Alignment.topRight,
                             colors: [
                               Color(0xFF97CBDC),
                               Color(0xFF018ABD),
@@ -209,6 +177,38 @@ class HomeScreen extends StatelessWidget {
                         const SizedBox(height: 8.0),
                         Text(
                           'Kết quả quiz',
+                          textAlign: TextAlign.center,
+                          style: openSansMediumStyle(
+                            fontSize: 12.0,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 32.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        menuItem(
+                          icon: Icons.assessment,
+                          color: const LinearGradient(
+                            begin: Alignment.bottomLeft,
+                            end: Alignment.topRight,
+                            colors: [
+                              Colors.lightGreenAccent,
+                              Colors.lightGreen,
+                            ],
+                          ),
+                          press: () {
+                            // Get.to(() => const StudentResultPage());
+                            // Get.toNamed('/prt/sthome');
+                          },
+                        ),
+                        const SizedBox(height: 8.0),
+                        Text(
+                          'Kết quả học',
                           textAlign: TextAlign.center,
                           style: openSansMediumStyle(
                             fontSize: 12.0,
