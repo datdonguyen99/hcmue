@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:hcmue/student/view/widgets/appbar.dart';
 import 'package:hcmue/student/view/widgets/connection_state_messages.dart';
 import 'package:hcmue/student/view/question/question_shimmer_loading.dart';
+import 'package:hcmue/student/view/question/question_form.dart';
 import 'package:hcmue/student/controller/question_controller.dart';
 import 'package:hcmue/public/utils/font_style.dart';
 import 'package:hcmue/public/utils/constant.dart';
@@ -23,6 +25,18 @@ class _QuestionPageState extends State<QuestionPage> {
     await _controller.getQuestionsByCourseId();
   }
 
+  void _showAddQuestionForm() {
+    showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      shape: const RoundedRectangleBorder(
+        borderRadius: BorderRadius.vertical(top: Radius.circular(20.0)),
+      ),
+      backgroundColor: backgroundColor,
+      builder: (BuildContext context) => const QuestionForm(),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -34,84 +48,101 @@ class _QuestionPageState extends State<QuestionPage> {
             style: openSansRegularStyle(fontSize: 20.0, color: white),
           ),
         ),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: FutureBuilder(
-            future: _controller.getQuestionsByCourseId(),
-            builder: (BuildContext context, AsyncSnapshot snapshot) {
-              if (snapshot.connectionState == ConnectionState.waiting) {
-                return const QuestionShimmerLoading();
-              } else {
-                if (snapshot.hasError) {
-                  return const ErrorMessage();
-                } else {
-                  if (_controller.questions.isEmpty) {
-                    return const ErrorMessage(msg: "Không có dữ liệu câu hỏi");
+        body: Stack(
+          children: <Widget>[
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: FutureBuilder(
+                future: _controller.getQuestionsByCourseId(),
+                builder: (BuildContext context, AsyncSnapshot snapshot) {
+                  if (snapshot.connectionState == ConnectionState.waiting) {
+                    return const QuestionShimmerLoading();
                   } else {
-                    return RefreshIndicator(
-                      displacement: 100.0,
-                      strokeWidth: 2.0,
-                      color: secondaryColor,
-                      backgroundColor: primaryColor.withOpacity(0.5),
-                      onRefresh: _refreshQuestions,
-                      child: Obx(
-                        () => ListView.builder(
-                          shrinkWrap: true,
-                          itemCount: _controller.questions.length,
-                          itemBuilder: (context, idx) {
-                            final question = _controller.questions[idx];
-                            return Card(
-                              margin: const EdgeInsets.symmetric(vertical: 8.0),
-                              color: backgroundColor,
-                              child: Padding(
-                                padding: const EdgeInsets.all(16.0),
-                                child: Row(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    CircleAvatar(
-                                      radius: 15.0,
-                                      backgroundImage: NetworkImage(
-                                        question.imageUrl,
-                                      ),
+                    if (snapshot.hasError) {
+                      return const ErrorMessage();
+                    } else {
+                      if (_controller.questions.isEmpty) {
+                        return const ErrorMessage(
+                            msg: "Không có dữ liệu câu hỏi");
+                      } else {
+                        return RefreshIndicator(
+                          displacement: 100.0,
+                          strokeWidth: 2.0,
+                          color: secondaryColor,
+                          backgroundColor: primaryColor.withOpacity(0.5),
+                          onRefresh: _refreshQuestions,
+                          child: Obx(
+                            () => ListView.builder(
+                              shrinkWrap: true,
+                              itemCount: _controller.questions.length,
+                              itemBuilder: (context, idx) {
+                                final question = _controller.questions[idx];
+                                return Card(
+                                  margin:
+                                      const EdgeInsets.symmetric(vertical: 8.0),
+                                  color: backgroundColor,
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(16.0),
+                                    child: Row(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        CircleAvatar(
+                                          radius: 15.0,
+                                          backgroundImage: NetworkImage(
+                                            question.imageUrl,
+                                          ),
+                                        ),
+                                        const SizedBox(width: 10.0),
+                                        Expanded(
+                                          child: Column(
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.start,
+                                            children: [
+                                              Text(
+                                                question.fullName,
+                                                style: openSansBoldStyle(),
+                                              ),
+                                              Text(
+                                                DateFormat('dd/MM/yyyy')
+                                                    .format(question.createdAt),
+                                                style: openSansRegularStyle(
+                                                  fontSize: 10.0,
+                                                ),
+                                              ),
+                                              const SizedBox(height: 10.0),
+                                              Text(
+                                                question.content,
+                                                style: openSansRegularStyle(),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                      ],
                                     ),
-                                    const SizedBox(width: 10.0),
-                                    Expanded(
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            question.fullName,
-                                            style: openSansBoldStyle(),
-                                          ),
-                                          Text(
-                                            DateFormat('dd/MM/yyyy')
-                                                .format(question.createdAt),
-                                            style: openSansRegularStyle(
-                                              fontSize: 10.0,
-                                            ),
-                                          ),
-                                          const SizedBox(height: 10.0),
-                                          Text(
-                                            question.content,
-                                            style: openSansRegularStyle(),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            );
-                          },
-                        ),
-                      ),
-                    );
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                        );
+                      }
+                    }
                   }
-                }
-              }
-            },
-          ),
+                },
+              ),
+            ),
+            Positioned(
+              top: 30.h,
+              right: 30.w,
+              child: FloatingActionButton(
+                backgroundColor: primaryColor.withOpacity(0.3),
+                foregroundColor: secondaryColor,
+                onPressed: _showAddQuestionForm,
+                child: const Icon(Icons.add),
+              ),
+            ),
+          ],
         ),
       ),
     );

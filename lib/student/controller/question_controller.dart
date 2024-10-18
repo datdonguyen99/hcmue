@@ -20,6 +20,24 @@ class QuestionController extends GetxController {
     }
   }
 
+  Future<void> sendQuestion(QuestionModel question) async {
+    isLoading.value = true;
+    try {
+      bool isSend = await _questionRepository.sendQuestion(question);
+      if (isSend) {
+        questions.add(question);
+        Get.snackbar('Success', 'Tạo câu hỏi thành công!');
+      } else {
+        Get.snackbar('Error', 'Tạo câu hỏi thất bại!');
+      }
+      // ignore: empty_catches
+    } catch (e) {
+    } finally {
+      isLoading.value = false;
+      update();
+    }
+  }
+
   @override
   void onInit() {
     super.onInit();

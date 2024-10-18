@@ -14,4 +14,13 @@ class QuestionRepository {
       throw Exception('Failed to fetch questions by courseId');
     }
   }
+
+  Future<bool> sendQuestion(QuestionModel question) async {
+    try {
+      bool isSend = await _questionService.sendQuestion(question.toJson());
+      return isSend;
+    } catch (e) {
+      throw Exception('Failed to send questions');
+    }
+  }
 }

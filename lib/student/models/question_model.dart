@@ -31,4 +31,17 @@ class QuestionModel {
       imageUrl: json['image_url'],
     );
   }
+
+  Map<String, dynamic> toJson() {
+    return {
+      'id': id,
+      'content': content,
+      'course_id': courseId,
+      'created_at':
+          createdAt.toIso8601String(), // Chuyển DateTime thành chuỗi ISO 8601
+      'user_id': userId,
+      'full_name': fullName,
+      'image_url': imageUrl,
+    };
+  }
 }

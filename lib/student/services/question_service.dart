@@ -67,4 +67,23 @@ class QuestionService {
       throw Exception('An error occurred: $e');
     }
   }
+
+  Future<bool> sendQuestion(Map<String, dynamic> questionData) async {
+    try {
+      final mockResponse = {
+        'statusCode': 201,
+      };
+
+      // Simulate a delay (optional, to mimic network latency)
+      await Future.delayed(const Duration(seconds: 2));
+
+      if (mockResponse['statusCode'] == 201) {
+        return true;
+      } else {
+        return false;
+      }
+    } catch (e) {
+      throw Exception('An error occurred: $e');
+    }
+  }
 }
